@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #brutforcing the pdf 
+#added this line using the github.com 
 
 #trying to access file via command line
 path1="/home/saii/pdf"
