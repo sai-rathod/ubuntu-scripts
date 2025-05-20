@@ -11,11 +11,11 @@ protected_file="$path1/$file"
 #trying unlocking with knownpasswd
 
 
-for (( i=0; i<=999999; i++ ))
+for (( i=10001; i<=20000; i++ ))
 do 
 
 #trying decrypting
-qpdf --password=$i --show-encryption "$protected_file" | grep "Incorrect password supplied" 
+qpdf --password=$i --show-encryption "$protected_file" | grep "Incorrect password supplied" &> /dev/null 
 
 
 if [[ $? -ne 0 ]];then
