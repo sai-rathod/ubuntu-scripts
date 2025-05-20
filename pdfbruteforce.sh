@@ -15,11 +15,10 @@ for (( i=0; i<=999999; i++ ))
 do 
 
 #trying decrypting
-output=$(qpdf --password=$i --show-encryption "$path2/$RANDOM.pdf" &> /dev/null | grep "Incorrect password supplied")
+qpdf --password=$i --show-encryption "$protected_file" | grep "Incorrect password supplied" 
 
-#matching the output
 
-if [[ $output != "Incorrect password supplied" ]];then
+if [[ $? -ne 0 ]];then
 	echo "password found:$i"
 exit 0
 fi
