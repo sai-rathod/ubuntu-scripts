@@ -21,6 +21,8 @@ contain=$(qpdf --password=$i --show-encryption "$protected_file" | awk 'NR==1')
 if [[ $contain != "Incorrect password supplied" ]];then
 	echo "password found:$i"
 exit 0
+else
+	echo "finding password"
 fi
 
 done
