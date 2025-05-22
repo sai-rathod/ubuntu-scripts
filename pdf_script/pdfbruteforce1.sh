@@ -2,8 +2,7 @@
 
 #brutforcing the pdf 
 #added this line using the github.com 
-#so will change this line and check if works
-#trying to access file via command line
+
 path1="/home/saii/pdf"
 path2="/home/saii/pdf/unlocked"
 file="Sayindra-DevOps_protected.pdf"
