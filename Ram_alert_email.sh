@@ -3,7 +3,7 @@
 
 Ram=$(free -mt | grep "Total" | awk '{print $4}')
 
-TH=500
+TH=5000
 To=www.rahulroy7878@gmail.com
 
 if [[ $Ram -le $TH ]];then
