@@ -1,7 +1,7 @@
 #!/bin/bash
 #automatically pushing the changes made in the dir
 #
-ping -c 1 github.com &> /dev/null
+ping -c 1 github.com > /dev/null 2>&1
 if [[ $? -eq 0 ]];then
 
 cd /home/saii/scripts || exit 0
