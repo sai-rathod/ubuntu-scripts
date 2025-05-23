@@ -1,0 +1,11 @@
+#tmp files 
+*.swp
+*.swo 
+#log files
+*.log
+logs/
+
+#back and tmp
+*.bak
+*.tmp
+
