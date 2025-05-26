@@ -11,7 +11,7 @@ protected_file="$path1/$file"
 #trying unlocking with knownpasswd
 
 
-for (( i=70001; i<=80000; i++ ))
+for (( i=700001; i<=800000; i++ ))
 do 
 
 #trying decrypting

@@ -5,20 +5,19 @@
 
 #trying to access file via command line
 path1="/home/saii/pdf"
-path2="/home/saii/pdf/unlocked"
-file="Sayindra-DevOps_protected.pdf"
+file="form_protected.pdf"
 protected_file="$path1/$file"
 #trying unlocking with knownpasswd
 
 
-for (( i=10001; i<=20000; i++ ))
+for (( i=200001; i<=300000; i++ ))
 do 
 
 #trying decrypting
-qpdf --password=$i --show-encryption "$protected_file" | grep "Incorrect password supplied" &> /dev/null 
+contain=$(qpdf --password=$i --show-encryption "$protected_file" | awk 'NR==1')
 
 
-if [[ $? -ne 0 ]];then
+if [[ $contain != "Incorrect password supplied" ]];then
 	echo "password found:$i"
 exit 0
 fi
