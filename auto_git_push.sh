@@ -17,6 +17,6 @@ else
 	echo "no changes found"
 fi
 else 
-	echo " no internet connetion at:$current_date "
+	echo " no internet connetion at:'$current_date' "
 fi
 
