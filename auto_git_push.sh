@@ -1,5 +1,6 @@
 #!/bin/bash
 #automatically pushing the changes made in the dir
+
 ping -c 1 google.com > /dev/null 2>&1
 if [[ $? -eq 0 ]];then
 
