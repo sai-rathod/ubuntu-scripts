@@ -13,4 +13,5 @@ for i in $(find "$Base" -maxdepth 1 -type f \( -size +40M -o -mtime +30 \));do
 	gzip "$i" || exit 1
 	mv "$i.gz" "$Base/archive"
 done
+echo "no files found"
 
