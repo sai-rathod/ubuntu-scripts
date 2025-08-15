@@ -9,3 +9,4 @@ logs/
 *.bak
 *.tmp
 
+.gitignore
